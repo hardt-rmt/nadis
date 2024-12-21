@@ -30,9 +30,6 @@ def send_sms_alert(to_number, message_body):
     except Exception as e:
         print(f"Failed to send SMS: {e}")
 
-# Example usage
-send_sms_alert('+1234567890', 'Alert: A severe earthquake has been detected in Los Angeles!')
-
 def send_email_alert(to_email, subject, message_body):
     try:
         # Initialize SendGrid client
@@ -51,7 +48,4 @@ def send_email_alert(to_email, subject, message_body):
         print(f"Email sent successfully! Status code: {response.status_code}")
     except Exception as e:
         print(f"Failed to send email: {e}")
-
-# Example usage
-send_email_alert('recipient@example.com', 'Disaster Alert', 'Alert: A severe flood has been detected in Houston!')
 

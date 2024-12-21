@@ -12,7 +12,6 @@ Due to cost I will not be streaming the tweets
 
 tweet_data = pd.read_csv('tweets.csv')
 tweets = tweet_data['text'].values
-print(preprocess_text(tweets[0]))
 
 classifier = pipeline('text-classification', model='./disaster_model')
 
